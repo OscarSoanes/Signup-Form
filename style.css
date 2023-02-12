@@ -1,4 +1,62 @@
 @font-face {
-    font-family: Norse-Bold;
+    font-family: "Norse-Bold";
     src: url("font/Norse-Bold.otf") format("opentype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&family=Source+Sans+Pro&display=swap');
+
+:root {
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+img[src="images/fern.jpg"] {
+    height: 100vh;
+    width: 550px;
+    object-fit:cover;
+}
+
+aside {
+    position: inherit;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 550px;
+
+    font-family: "Norse-Bold";
+    font-size: 64px;
+    background-color: #00000090;
+    color: white;
+
+    position: absolute;
+    top: 25vh;
+}
+
+.logo > img {
+    height: 128px;
+}
+
+aside > p {
+    display: flex;
+    justify-content: center;
+    width: 550px;
+    color: white;
+    position: absolute;
+    bottom: 12px;
+}
+
+aside > p > a {
+    color: white;
+}
+
+aside > p > a::before, aside > p > a::after {
+    content: "";
+    padding: 3px;
 }
